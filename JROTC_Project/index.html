@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operation Cardboard Shadow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="briefing" class="overlay">
+    <div class="panel">
+      <h1>Operation Cardboard Shadow</h1>
+      <p><strong>JROTC Stealth Training Simulation (Fictional)</strong></p>
+      <p>
+        This is a quest-driven first-person stealth mission in Washington, D.C.
+        Every person is represented as a cardboard cutout for a clearly fictional classroom demo.
+      </p>
+      <h2>Briefing</h2>
+      <ol>
+        <li>Infiltrate the White House training set without being detected by guard cutouts.</li>
+        <li>Retrieve the cardboard President cutout from the Oval Office set piece.</li>
+        <li>Exfiltrate to the extraction zone at the National Mall with the cutout.</li>
+      </ol>
+      <p class="note">Controls: <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> move, <kbd>←</kbd><kbd>→</kbd> turn, <kbd>Shift</kbd> to crouch-sneak.</p>
+      <button id="startBtn">Begin Briefing Scenario</button>
+    </div>
+  </div>
+
+  <canvas id="view" width="960" height="540" aria-label="first person stealth simulation"></canvas>
+
+  <aside id="hud">
+    <h3>Quest Log</h3>
+    <ul id="questList"></ul>
+    <div id="hint"></div>
+    <div id="alertWrap">
+      <div class="label">Detection</div>
+      <div id="alertBar"><span id="alertFill"></span></div>
+    </div>
+  </aside>
+
+  <script src="game.js"></script>
+</body>
+</html>
